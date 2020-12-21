@@ -1,10 +1,10 @@
 #!/bin/bash
 
-echo -e "\nWelcome to the metrix generator\n"
+echo -e "\nWelcome to the matrix generator\n"
 sleep 1
 
 output="Net4U "
-metrix=""
+matrix=""
 
 rows=$rows
 echo -e "\nEnter a number of rows: "
@@ -21,10 +21,10 @@ sleep 1
 
 for i in $(seq 1 $columns)
 do
-  metrix="$metrix$output"
+  matrix="$matrix$output"
 done
 
 for i in $(seq 1 $rows)
 do
-  echo $metrix
+  echo $matrix
 done
