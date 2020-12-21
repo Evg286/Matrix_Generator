@@ -1,0 +1,30 @@
+#!/bin/bash
+
+echo -e "\nWelcome to the metrix generator\n"
+sleep 1
+
+output="Net4U "
+metrix=""
+
+rows=$rows
+echo -e "\nEnter a number of rows: "
+read rows
+sleep 1
+
+columns=$columns
+echo -e "\nEnter a number of columns: "
+read columns
+sleep 1
+
+echo -e "\nGenerating your metrix...\n\n"
+sleep 1
+
+for i in $(seq 1 $columns)
+do
+  metrix="$metrix$output"
+done
+
+for i in $(seq 1 $rows)
+do
+  echo $metrix
+done
